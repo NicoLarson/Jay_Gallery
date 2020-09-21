@@ -1,0 +1,295 @@
+:root {
+  --color-primary: #f1c40f;
+  --color-secondary: #f39c12;
+  --color-backprimary: #ecf0f1;
+  --color-backsecondary: #bdc3c7;
+  --color-font: #444;
+}
+body {
+  color: var(--color-font);
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+/*theme*/
+header nav ul {
+  background-color: var(--color-backprimary);
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+header nav ul li {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+header nav ul li a {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+header nav ul li a:hover {
+  transition: all 1s;
+  border-top: 1px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+}
+.main-content-image {
+  background: url(../assets/img_gal/15.png) no-repeat
+    fixed center center/cover;
+  width: 100vw;
+  height: 100vh;
+}
+/* index */
+h2 {
+  text-align: center;
+  padding: 4rem;
+}
+#galery {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+#col2 {
+  padding: 0 0.5rem;
+}
+#index section ul {
+  display: flex;
+  flex-direction: column;
+}
+#index section ul li img {
+  border-radius: 4px;
+  max-width: 100%;
+}
+#index section ul li img:hover{
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: all 1s;
+  transform: scale(1.05);
+}
+
+/* store */
+
+#sub-header {
+  height: 5rem;
+}
+#store {
+  padding: 4rem;
+}
+#store ul {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+#store ul li figure {
+  margin: 1rem;
+  
+  border-radius: 0.25rem;
+  background-color: #fafafa;
+}
+
+#store ul li figure:hover {
+  transition: 1s;
+  transform: scale(1.2);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+#store ul li figure figcaption {
+  text-align: center;
+  padding: 1rem;
+}
+#store img {
+  display: block;
+  margin: 0 auto;
+  
+  border-radius: 0.25rem;
+  width: 20vw;
+}
+/* about */
+
+#divnav {
+  height: 5rem;
+}
+
+#about {
+  background: url(../assets/img_gal/07.png) no-repeat
+    fixed center/cover;
+  width: 100vw;
+}
+#aboutMe {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  background-color: var(--color-backprimary);
+  height: 100%;
+  opacity: 0.95;
+}
+#about section p {
+  padding: 2rem;
+}
+#about figure {
+  padding: 2rem;
+}
+#about figure img {
+  width: 12rem;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+/* Contact */
+#contact{
+  background: url(../assets/img_gal/12.jpg) fixed ;
+  height: 100vh;
+
+}
+#contact fieldset{
+  position: relative;
+  top: 4rem;
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--color-backprimary);
+  border-radius: 1rem;
+  border: hidden;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#contact fieldset legend{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 0.5rem
+}
+#contact fieldset ul li{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 20%;
+  font-size: 1.6rem;
+  
+}
+#contact fieldset ul li input{
+  height: 2rem;
+  border-radius: 1rem;
+  border: hidden;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#contact fieldset ul li textarea{
+  border-radius: 1rem;
+  border: hidden;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#contact fieldset ul li button{
+  cursor: pointer;
+  width: 8rem;
+  height: 2rem;
+  font-weight: bolder;
+  background-color: var(--color-primary);
+  color: var(--color-backprimary);
+  border-radius: 1rem;
+  margin: 0 auto;
+  border: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#contact fieldset ul li button:hover{
+  transition: 0.5s;
+  transform: scale(1.2);
+  background-color: var(--color-primary);
+  font-weight: bold;
+}
+/* Footer */
+footer {
+  background-color: var(--color-backprimary);
+  width: 100%;
+  padding: 1rem;
+}
+
+footer ul {
+  text-align: center;
+}
+footer ul li {
+  display: inline;
+  padding: 1rem;
+}
+footer ul li a {
+  color: var(--color-secondary);
+}
+
+footer p {
+  text-align: center;
+  margin: 1rem;
+  font-size: small;
+  color: #999999;
+}
+@media screen and (max-width: 425px) {
+  header nav ul {
+    position: relative;
+  }
+  header nav ul li {
+    display: block;
+    padding: 0rem;
+  }
+  header nav ul li a {
+    display: block;
+
+    padding: 0.5rem;
+    height: 100%;
+    width: 100%;
+  }
+  #galery{
+    padding: 0 0 0 0.4rem;
+  }
+  #galery ul li img{
+    padding: 0 0.4rem 0 0;
+
+  }
+ #index #col2 {
+    display: none;
+  }
+
+  #store{
+    margin: 0;
+    padding: 0;
+  }
+
+
+  #store img {
+    display: block;
+    width: 100%;
+  }
+
+  #about {
+    height: 100%;
+    font-size: 1rem;
+    margin-top: -7rem;
+  }
+  #aboutMe section {
+    padding: 4rem 1rem 0 0;
+    background-color: var(--color-backprimary);
+    opacity: 0.9;
+    width: 100%;
+  }
+  #aboutMe section p, footer, #fQuote, cite {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  #aboutMe figure {
+    display: none;
+  }
+  #divnav{
+    display: none;
+  }
+  #contact fieldset{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #contact fieldset ul li{
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+    width: 80%;
+        font-size: 1.6rem;
+  }
+}
