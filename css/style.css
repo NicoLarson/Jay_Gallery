@@ -117,9 +117,11 @@ h2 {
 #about {
   background: url(../assets/img_gal/07.png) no-repeat
     fixed center/cover;
-  width: 100vw;
 }
 #aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   color: black;
   font-size: 2rem;
   text-align: center;
