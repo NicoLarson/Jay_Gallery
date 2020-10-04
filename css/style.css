@@ -117,6 +117,7 @@ h2 {
 #about {
   background: url(../assets/img_gal/07.png) no-repeat
     fixed center/cover;
+    height: 100%;
 }
 #aboutMe {
   display: flex;
@@ -170,12 +171,14 @@ h2 {
   
 }
 #contact fieldset ul li input{
+  padding: .8rem;
   height: 2rem;
   border-radius: 1rem;
   border: hidden;
   box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
 }
 #contact fieldset ul li textarea{
+  padding: .8rem;
   border-radius: 1rem;
   border: hidden;
   box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
