@@ -30,15 +30,14 @@ header nav ul li a {
   display: block;
   width: 100%;
   padding: 0.5rem;
+  transition: all 0.4s;
 }
 header nav ul li a:hover {
-  transition: all 1s;
   border-top: 1px solid var(--color-primary);
   border-bottom: 1px solid var(--color-primary);
 }
 .main-content-image {
-  background: url(../assets/img_gal/15.png) no-repeat
-    fixed center center/cover;
+  background: url(../assets/img_gal/15.png) no-repeat fixed center center/cover;
   width: 100vw;
   height: 100vh;
 }
@@ -62,10 +61,10 @@ h2 {
 #index section ul li img {
   border-radius: 4px;
   max-width: 100%;
-}
-#index section ul li img:hover{
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   transition: all 1s;
+}
+#index section ul li img:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   transform: scale(1.05);
 }
 
@@ -86,13 +85,12 @@ h2 {
 
 #store ul li figure {
   margin: 1rem;
-  
   border-radius: 0.25rem;
   background-color: #fafafa;
+  transition: 1s;
 }
 
 #store ul li figure:hover {
-  transition: 1s;
   transform: scale(1.2);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
@@ -104,7 +102,7 @@ h2 {
 #store img {
   display: block;
   margin: 0 auto;
-  
+
   border-radius: 0.25rem;
   width: 20vw;
 }
@@ -115,9 +113,8 @@ h2 {
 }
 
 #about {
-  background: url(../assets/img_gal/07.png) no-repeat
-    fixed center/cover;
-    height: 100%;
+  background: url(../assets/img_gal/07.png) no-repeat fixed center/cover;
+  height: 100%;
 }
 #aboutMe {
   display: flex;
@@ -142,12 +139,11 @@ h2 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 /* Contact */
-#contact{
-  background: url(../assets/img_gal/12.jpg) fixed ;
+#contact {
+  background: url(../assets/img_gal/12.jpg) fixed;
   height: 100vh;
-
 }
-#contact fieldset{
+#contact fieldset {
   position: relative;
   top: 4rem;
   width: 80%;
@@ -155,35 +151,34 @@ h2 {
   background-color: var(--color-backprimary);
   border-radius: 1rem;
   border: hidden;
-  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
-#contact fieldset legend{
+#contact fieldset legend {
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 0 0.5rem
+  padding: 0 0.5rem;
 }
-#contact fieldset ul li{
+#contact fieldset ul li {
   display: flex;
   flex-direction: column;
   padding: 1rem 20%;
   font-size: 1.6rem;
-  
 }
-#contact fieldset ul li input{
-  padding: .8rem;
+#contact fieldset ul li input {
+  padding: 0.8rem;
   height: 2rem;
   border-radius: 1rem;
   border: hidden;
-  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
-#contact fieldset ul li textarea{
-  padding: .8rem;
+#contact fieldset ul li textarea {
+  padding: 0.8rem;
   border-radius: 1rem;
   border: hidden;
-  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
-#contact fieldset ul li button{
+#contact fieldset ul li button {
   cursor: pointer;
   width: 8rem;
   height: 2rem;
@@ -194,10 +189,10 @@ h2 {
   margin: 0 auto;
   border: hidden;
   border-radius: 1rem;
-  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
-}
-#contact fieldset ul li button:hover{
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
   transition: 0.5s;
+}
+#contact fieldset ul li button:hover {
   transform: scale(1.2);
   background-color: var(--color-primary);
   font-weight: bold;
@@ -241,22 +236,20 @@ footer p {
     height: 100%;
     width: 100%;
   }
-  #galery{
+  #galery {
     padding: 0 0 0 0.4rem;
   }
-  #galery ul li img{
+  #galery ul li img {
     padding: 0 0.4rem 0 0;
-
   }
- #index #col2 {
+  #index #col2 {
     display: none;
   }
 
-  #store{
+  #store {
     margin: 0;
     padding: 0;
   }
-
 
   #store img {
     display: block;
@@ -274,7 +267,10 @@ footer p {
     opacity: 0.9;
     width: 100%;
   }
-  #aboutMe section p, footer, #fQuote, cite {
+  #aboutMe section p,
+  footer,
+  #fQuote,
+  cite {
     width: 100%;
     font-size: 1rem;
     padding: 1rem;
@@ -282,19 +278,19 @@ footer p {
   #aboutMe figure {
     display: none;
   }
-  #divnav{
+  #divnav {
     display: none;
   }
-  #contact fieldset{
+  #contact fieldset {
     width: 100%;
     margin: 0;
     padding: 0;
   }
-  #contact fieldset ul li{
+  #contact fieldset ul li {
     text-align: center;
     padding: 1rem 0;
     margin: 0 auto;
     width: 80%;
-        font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 }
